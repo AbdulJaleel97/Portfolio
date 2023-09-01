@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>AbdulJaleel</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="gelato-app">
+      <!-- Start Navbar -->
+      <div class="header-nav">
+        <div class="logo flex-center">
+          <a href="#home" style="color: black">AbdulJaleel</a>
+        </div>
+        <div class="header-links" class="header-links">
+          <ul class="my-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Lets Talk!</a></li>
+          </ul>
+          <div class="menu-links">
+            <div class="overlay" ref="menuOverlay" @click="toggleMenu()"></div>
+            <div class="home-links" ref="menuLinks">
+              <ul>
+                <div class="header">
+                  <span class="close-menu" @click="toggleMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+                </div>
+                <li><a @click="toggleMenu()" href="#home">Home</a></li>
+                <li><a @click="toggleMenu()" href="#about">About</a></li>
+                <li>
+                  <a @click="toggleMenu()" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a @click="toggleMenu()" href="#contact">Lets Talk!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="open-menu flex-center" @click="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!-- End Navbar -->
+
+      <!-- Start Homepage -->
+      <div class="home" id="home">
+        <div class="container">
+          <div class="content">
+            <div class="home-text flex-start">
+              <div class="text">
+                <div class="title">
+                  <h2>Jr Front-End Vue.js Developer!</h2>
+                </div>
+                <p>
+                  Hey! I am AbdulJaleel Mohammad, A Skilled and Passionate
+                  Front-end Vue.js Developer with high Potentials.
+                </p>
+              </div>
+            </div>
+            <div class="home-img flex-center">
+              <div class="my-img"></div>
+            </div>
+          </div>
+          <div class="flex-start my-skills">
+            <h5>My Skills :</h5>
+            <ul>
+              <li>
+                <div>
+                  <img src="imgs/html.png" alt="Html" />
+                </div>
+                <h6 class="mt-3 mb-0">HTML</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/css.png" alt="Css" />
+                </div>
+                <h6 class="mt-3 mb-0">CSS</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/bootstrap.png" alt="bootstrap.png" />
+                </div>
+                <h6 class="mt-3 mb-0">Bootstrap</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/jquery.png" alt="jquery" />
+                </div>
+                <h6 class="mt-3 mb-0">jQuery</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/sass.png" alt="sass" />
+                </div>
+                <h6 class="mt-3 mb-0">SASS</h6>
+              </li>
+              <li>
+                <div>
+                  <img class="js" src="imgs/js.png" alt="Javascript" />
+                </div>
+                <h6 class="mt-3 mb-0">Javascript</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/vue.png" alt="vue" />
+                </div>
+                <h6 class="mt-3 mb-0">Vue.js</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/vuetify.png" alt="vuetify" />
+                </div>
+                <h6 class="mt-3 mb-0">Vuetify</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/nuxt.png" alt="nuxt" />
+                </div>
+                <h6 class="mt-3 mb-0">Nuxt3</h6>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/node.png" alt="node" />
+                </div>
+                <h6 class="mt-3 mb-0">Node.js</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Homepage -->
+
+      <!-- Start About -->
+      <div class="about" id="about">
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="img">
+                  <img class="main-img" src="imgs/about.png" alt="about-img" />
+                  <div class="rotating-img">
+                    <img
+                      class="rotate"
+                      src="imgs/rotate-about.svg"
+                      alt="rotate"
+                    />
+                    <img
+                      class="study"
+                      src="imgs/about-working.png"
+                      alt="study"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text">
+                  <h4 class="heading">About me</h4>
+                  <h2 class="my-title">
+                    Outstanding Front-end Vue.js Developer!
+                  </h2>
+                  <p>
+                    As a Jr Front-end I take pride in delivering outstanding
+                    projects that not only meet, but exceed client expectations.
+                    My attention to detail and commitment to excellence ensure
+                    that my work is always of the highest quality. In addition
+                    to my technical expertise, I'm an avid chess player and a
+                    fan of the Souls game series, particularly the Dark Souls
+                    franchise. These hobbies have honed my strategic thinking
+                    and problem-solving skills, which I apply to my work as a
+                    developer. I believe that a well-rounded personality and
+                    diverse interests contribute to my ability to create
+                    intuitive and engaging user experiences. Feel free to
+                    explore my portfolio to see the exceptional projects I've
+                    completed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About -->
+
+      <!-- Start Portfolio -->
+      <div class="portfolio" id="portfolio">
+        <div class="container">
+          <h4 class="header">Portfolio</h4>
+          <div class="content">
+            <div
+              class="project-box"
+              v-for="(project,i) in myProjects"
+              :key="i"
+              :style="{
+                flexDirection: project.direction == true ? 'row-reverse' : '',
+              }"
+            >
+              <div class="text">
+                <h4 class="name">{{ project.name}}</h4>
+                <p>{{project.description}}</p>
+                <ul class="langs">
+                  <li v-for="lang in project.langs" :key="i">{{lang}}</li>
+                </ul>
+                <div class="live-demo">
+                  <a :href="project.link" target="_blank"
+                    >Live Demo <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="img">
+                <img :src="project.img" :alt="project.name" />
+              </div>
+            </div>
+          </div>
+          <div class="in-progress text-center fs-5">
+            <i class="fa-solid fa-gear fa-spin"></i> IN PROGRESS...
+          </div>
+        </div>
+      </div>
+      <!-- End Portfolio -->
+
+      <!-- Start Contact -->
+      <div class="contact" id="contact">
+        <div class="container">
+          <div class="content">
+            <h2 class="heading">Feel Free to contact me</h2>
+            <div class="social">
+              <div class="item">
+                <span>
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </span>
+                <a href="mailto:AbdulJaleelSaeed1997@gmail.com"
+                  >AbdulJaleelSaeed1997@gmail.com</a
+                >
+              </div>
+              <div class="item">
+                <span>
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                <a href="https://github.com/AbdulJaleel97" target="_blank"
+                  >github.com/AbdulJaleel97</a
+                >
+              </div>
+              <div class="item">
+                <span>
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+                <a
+                  href="https://www.linkedin.com/in/abduljaleel97"
+                  target="_blank"
+                  >linkedin.com/in/abduljaleel97</a
+                >
+              </div>
+              <div class="item">
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a>01100800030</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact -->
+
+      <!-- Start Footer -->
+      <div class="footer text-center">
+        All Rights Reserved - {{name}} &copy;2023
+      </div>
+      <!-- End Footer -->
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/jQuery3.6.4.min.js"></script>
+    <script src="js/vue3.2.47.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
