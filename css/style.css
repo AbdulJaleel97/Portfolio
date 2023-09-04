@@ -273,7 +273,7 @@ a {
 .home .content .home-img .my-img {
   -webkit-animation: blob 8s ease-in-out infinite;
   animation: blob 8s ease-in-out infinite;
-  background-image: url("../imgs/me1.jpg");
+  background-image: url("../imgs/me.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -501,7 +501,6 @@ a {
 /*End Portfolio*/
 /*Start Contact*/
 .contact {
-  padding: 60px 0;
   background-color: #fff;
   margin: 60px auto;
 }
