@@ -15,20 +15,19 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
+/* Adjust Scrollbar Visual */
 html::-webkit-scrollbar {
   width: 10px;
 }
-
 html::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 html::-webkit-scrollbar-thumb {
   background-color: #8d8d8d;
   border-radius: 50px;
@@ -68,6 +67,94 @@ a {
   align-items: center;
 }
 
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+.col {
+  flex: 1 0 0%;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+h6,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h6 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+/* End Global Rules */
+
 /*Start Navbar*/
 .header-nav {
   display: flex;
@@ -76,7 +163,7 @@ a {
   padding: 20px;
   height: 64px;
   box-shadow: 0 0 5px #9999997d;
-  z-index: 9999;
+  z-index: 99;
   background-color: white;
 }
 .header-nav .header-links {
@@ -87,13 +174,11 @@ a {
   display: flex;
   font-size: 15px;
 }
-.header-nav .header-links .my-ul li {
-  margin: 0 10px;
-  font-size: 17px;
-}
 .header-nav .header-links .my-ul li a {
   color: black;
   font-weight: 600;
+  margin: 0 10px;
+  font-size: 17px;
 }
 @media (max-width: 991px) {
   .header-nav .header-links .my-ul {
@@ -114,13 +199,13 @@ a {
 .header-nav .header-links .menu-links .overlay.show {
   position: fixed;
   opacity: 1;
-  z-index: 999999999999;
+  z-index: 991;
 }
 .header-nav .header-links .menu-links .home-links {
   position: fixed;
   background-color: white;
   height: 100%;
-  z-index: 99999999999;
+  z-index: 992;
   left: 0;
   top: 0;
   transition: 0.3s ease-in-out;
@@ -148,10 +233,10 @@ a {
   font-size: 18px;
   pointer-events: none;
 }
-.header-nav .header-links .menu-links .home-links ul li {
+.header-nav .home-links ul li {
   margin: 15px 10px;
 }
-.header-nav .header-links .menu-links .home-links ul li a {
+.header-nav .home-links ul li a {
   color: var(--bg-color);
   font-weight: 500;
 }
@@ -204,8 +289,8 @@ a {
     top: 0;
   }
 }
-
 /*End Navbar*/
+
 /*Start Homepage*/
 .home {
   min-height: calc(100vh - 64px);
@@ -304,9 +389,7 @@ a {
   gap: 30px;
   padding-bottom: 50px;
 }
-.home .my-skills h5 {
-  margin: 0;
-}
+
 .home .my-skills ul {
   display: flex;
   flex-wrap: wrap;
@@ -323,6 +406,7 @@ a {
 .home .my-skills ul div img {
   max-width: 30px;
   max-height: 30px;
+  vertical-align: middle;
 }
 .home .my-skills ul div img.js {
   border-radius: 4px;
@@ -335,8 +419,8 @@ a {
     justify-content: center;
   }
 }
-
 /*End Homepage*/
+
 /*Start About*/
 .about {
   padding: 13rem 0;
@@ -400,8 +484,8 @@ a {
 .about .content .text p {
   color: #767676;
 }
-
 /*End About*/
+
 /*Start Portfolio*/
 .portfolio {
   background-color: var(--section-bg);
@@ -497,8 +581,8 @@ a {
   transition: 7s ease-in-out;
   width: 100%;
 }
-
 /*End Portfolio*/
+
 /*Start Contact*/
 .contact {
   background-color: #fff;
@@ -556,18 +640,10 @@ a {
 .contact .content .social .item a:hover {
   color: var(--heading-color);
 }
-
 /*End Contact*/
+
 /*Start Footer*/
 .footer {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 18px 0;
-  background-color: #3a3a3a;
-  color: white;
-  font-weight: 400;
-  font-size: 17px;
-}
 
+}
 /*End Footer*/

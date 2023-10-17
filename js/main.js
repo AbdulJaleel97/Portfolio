@@ -50,29 +50,22 @@ createApp({
       if (this.isMenuOpen) {
         this.$nextTick(() => {
           this.$refs.menuOverlay.classList.add("show");
-          setTimeout(() => {
-            this.$refs.menuLinks.classList.add("show");
-          });
+          this.$refs.menuLinks.classList.add("show");
         });
       } else {
         this.$refs.menuLinks.classList.remove("show");
-        setTimeout(() => {
-          this.$refs.menuOverlay.classList.remove("show");
-        });
+        this.$refs.menuOverlay.classList.remove("show");
       }
     },
   },
 }).mount("#gelato-app");
 
-// Navbar show on scroll
-$(() => {
-  var navHeight = $(".header-nav").outerHeight();
-  $(window).scroll(function () {
-    var scrolled = $(document).scrollTop();
-    if (scrolled > navHeight) {
-      $(".header-nav").addClass("fixed");
-    } else {
-      $(".header-nav").removeClass("fixed");
-    }
-  });
+// Show Navbar on scrolling
+let navHeight = document.querySelector(".header-nav");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > navHeight.offsetHeight) {
+    navHeight.classList.add("fixed");
+  } else {
+    navHeight.classList.remove("fixed");
+  }
 });
