@@ -423,7 +423,7 @@ h5 {
 
 /*Start About*/
 .about {
-  padding: 13rem 0;
+  padding: 6rem 0;
 }
 .about .content .img {
   position: relative;
@@ -489,7 +489,7 @@ h5 {
 /*Start Portfolio*/
 .portfolio {
   background-color: var(--section-bg);
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 150px;
 }
 .portfolio .header {
@@ -624,6 +624,9 @@ h5 {
   display: flex;
   align-items: center;
 }
+.contact .content .social .item i {
+  font-size: 25px;
+}
 .contact .content .social .item span {
   margin-right: 15px;
   border-radius: 50%;
@@ -641,9 +644,3 @@ h5 {
   color: var(--heading-color);
 }
 /*End Contact*/
-
-/*Start Footer*/
-.footer {
-
-}
-/*End Footer*/
