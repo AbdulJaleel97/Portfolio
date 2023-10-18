@@ -638,7 +638,7 @@ h5 {
 .contact .content .social .item a {
   color: #6e6e6e;
   font-size: 18px;
-  transition: 0.3s;
+  transition: 0.31s;
 }
 .contact .content .social .item a:hover {
   color: var(--heading-color);
