@@ -505,7 +505,7 @@ h5 {
 }
 .portfolio .content .project-box {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   border-radius: 25px;
   padding: 30px;
   color: var(--text-color);
@@ -569,7 +569,7 @@ h5 {
 }
 .portfolio .content .project-box .img {
   max-height: 300px;
-  max-width: 530px;
+  max-width: 100%;
   overflow: hidden;
   border-radius: 10px;
   flex: 1;
