@@ -38,7 +38,7 @@ createApp({
           link: "https://abduljaleel-dinter.netlify.app/",
           img: "../imgs/dinter.png",
           langs: ["Vue.js", "Vuetify", "Vuex"],
-          direction: true,
+          direction: false,
         },
         {
           name: "Resume - Cv Template",
