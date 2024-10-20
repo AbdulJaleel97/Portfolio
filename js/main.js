@@ -22,15 +22,15 @@ createApp({
           langs: ["Vue.js", "Vuex", "Swiper.js", "Bootstrap"],
           direction: true,
         },
-        {
-          name: "Ellamart - eCommerce",
-          description:
-            "Ellamart eCommerce Website Deals with Api calls to show all Categories. Ellamart is well-coded , commented and user-friendly with awesome features making browsing easy for users",
-          link: "https://abduljaleel-ellamart.netlify.app/",
-          img: "../imgs/ellamart.png",
-          langs: ["Nuxt", "Vuetify", "Pinia", "AxiosApi"],
-          direction: false,
-        },
+        // {
+        //   name: "Ellamart - eCommerce",
+        //   description:
+        //     "Ellamart eCommerce Website Deals with Api calls to show all Categories. Ellamart is well-coded , commented and user-friendly with awesome features making browsing easy for users",
+        //   link: "https://abduljaleel-ellamart.netlify.app/",
+        //   img: "../imgs/ellamart.png",
+        //   langs: ["Nuxt", "Vuetify", "Pinia", "AxiosApi"],
+        //   direction: false,
+        // },
         {
           name: "Dinter - Interior Designs",
           description:
@@ -49,15 +49,6 @@ createApp({
           langs: ["Html", "CSS", "JS"],
           direction: true,
         },
-        // {
-        //   name: "Ellamart - eCommerce",
-        //   description:
-        //     "Ellamart eCommerce Website Deals with Api calls to show all Categories. Ellamart is well-coded , commented and user-friendly with awesome features making browsing easy for users",
-        //   link: "https://abduljaleel-ellamart.netlify.app/",
-        //   img: "../imgs/ellamart.png",
-        //   langs: ["Nuxt", "Vuetify", "Pinia", "AxiosApi"],
-        //   direction: false,
-        // },
       ],
       isMenuOpen: false,
     };
