@@ -5,6 +5,15 @@ createApp({
       name: "AbdulJaleel",
       myProjects: [
         {
+          name: "Lenore - Jewelries",
+          description:
+            "Lenore is an ecommerce luxury jewelry website, with our curated collection of rings, necklaces, and more. Enjoy secure shopping, fast shipping, and exceptional service.(DEMO)",
+          link: "https://lenore-beta.netlify.app/",
+          img: "../imgs/lenore.png",
+          langs: ["Vue.js","Vuetify","Pinia"],
+          direction: false,
+        },
+        {
           name: "Electbox - Electronics Store",
           description:
             "Electbox – Electronics Super Store Theme is an extremely powerful and user-friendly theme with awesome features looks perfect for Electronics, Games, Gadgets, Tools, Mobile, Megastore, Supermarket, Furniture, Fashion related eCommerce project. ",
@@ -31,15 +40,15 @@ createApp({
           langs: ["Html", "CSS", "JS"],
           direction: true,
         },
-        {
-          name: "Ellamart - eCommerce",
-          description:
-            "Ellamart eCommerce Website Deals with Api calls to show all Categories. Ellamart is well-coded , commented and user-friendly with awesome features making browsing easy for users",
-          link: "https://abduljaleel-ellamart.netlify.app/",
-          img: "../imgs/ellamart.png",
-          langs: ["Nuxt", "Vuetify", "Pinia", "AxiosApi"],
-          direction: false,
-        },
+        // {
+        //   name: "Ellamart - eCommerce",
+        //   description:
+        //     "Ellamart eCommerce Website Deals with Api calls to show all Categories. Ellamart is well-coded , commented and user-friendly with awesome features making browsing easy for users",
+        //   link: "https://abduljaleel-ellamart.netlify.app/",
+        //   img: "../imgs/ellamart.png",
+        //   langs: ["Nuxt", "Vuetify", "Pinia", "AxiosApi"],
+        //   direction: false,
+        // },
       ],
       isMenuOpen: false,
     };
