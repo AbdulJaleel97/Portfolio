@@ -23,13 +23,22 @@ createApp({
           direction: true,
         },
         {
+          name: "Ellamart - eCommerce",
+          description:
+            "Ellamart eCommerce Website Deals with Api calls to show all Categories. Ellamart is well-coded , commented and user-friendly with awesome features making browsing easy for users",
+          link: "https://abduljaleel-ellamart.netlify.app/",
+          img: "../imgs/ellamart.png",
+          langs: ["Nuxt", "Vuetify", "Pinia", "AxiosApi"],
+          direction: false,
+        },
+        {
           name: "Dinter - Interior Designs",
           description:
             "Dinter is the ideal template for your architecture and interior design business.",
           link: "https://abduljaleel-dinter.netlify.app/",
           img: "../imgs/dinter.png",
           langs: ["Vue.js", "Vuetify", "Vuex"],
-          direction: false,
+          direction: true,
         },
         {
           name: "Resume - Cv Template",
@@ -59,29 +68,22 @@ createApp({
       if (this.isMenuOpen) {
         this.$nextTick(() => {
           this.$refs.menuOverlay.classList.add("show");
-          setTimeout(() => {
-            this.$refs.menuLinks.classList.add("show");
-          });
+          this.$refs.menuLinks.classList.add("show");
         });
       } else {
         this.$refs.menuLinks.classList.remove("show");
-        setTimeout(() => {
-          this.$refs.menuOverlay.classList.remove("show");
-        });
+        this.$refs.menuOverlay.classList.remove("show");
       }
     },
   },
 }).mount("#gelato-app");
 
-// Navbar show on scroll
-$(() => {
-  var navHeight = $(".header-nav").outerHeight();
-  $(window).scroll(function () {
-    var scrolled = $(document).scrollTop();
-    if (scrolled > navHeight) {
-      $(".header-nav").addClass("fixed");
-    } else {
-      $(".header-nav").removeClass("fixed");
-    }
-  });
+// Show Navbar on scrolling
+let navHeight = document.querySelector(".header-nav");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > navHeight.offsetHeight) {
+    navHeight.classList.add("fixed");
+  } else {
+    navHeight.classList.remove("fixed");
+  }
 });
